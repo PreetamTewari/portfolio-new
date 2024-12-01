@@ -36,7 +36,7 @@ export const commands: Command[] = [
   },
   {
     name: 'ls',
-    description: 'List portfolio sections',
+    description: 'List directory',
     execute: () => (
       <div className="space-y-1">
         <div>/users/preetamtewari/portfolio</div>
