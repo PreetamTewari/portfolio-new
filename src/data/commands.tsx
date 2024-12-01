@@ -59,6 +59,28 @@ export const commands: Command[] = [
     execute: () => 'Available themes: ubuntu, gruvbox, nord, catppuccin, batman',
   },
   {
+    name: 'education',
+    description: 'Display my education',
+    execute: () => (
+      <div>
+        <div>
+          <p className="font-bold">Master of Science in Computer Networks</p>
+          <p className="ml-4">2014 - 2016</p>
+          <p className="ml-4">University of Illinois at Chicago</p>
+          <p className='ml-4'>Chicago, IL</p>
+          <p className='ml-4'>GPA: 3.07 / 4.0</p>
+        </div>
+        <div>
+          <p className="font-bold">Bachelor of Engineering in Electrical Engineering</p>
+          <p className="ml-4">2009 - 2013</p>
+          <p className="ml-4">BVB College of Engineering and Technology</p>
+          <p className='ml-4'>Hubballi</p>
+          <p className='ml-4'>GPA: 8.77 / 10.0</p>
+        </div>
+      </div>
+    ),
+  },
+  {
     name: 'techstack',
     description: 'Display my technical skills',
     execute: () => getTechStackArt(),

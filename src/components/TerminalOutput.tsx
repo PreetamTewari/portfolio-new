@@ -1,4 +1,3 @@
-import React from 'react';
 import { Theme, TerminalHistory } from '../types/terminal';
 
 interface TerminalOutputProps {
