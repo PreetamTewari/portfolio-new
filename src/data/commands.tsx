@@ -150,9 +150,30 @@ export const commands: Command[] = [
               linkedin.com/in/preetamprakashtewari
             </a>
           </div>
+          <div className='flex items-center gap-2'>
+            <Globe className="w-5 h-5" />
+              <a href="https://portfolio-preetamtewari.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                https://portfolio-preetamtewari.vercel.app/
+              </a>
+          </div>
         </div>
         <p className="text-sm opacity-80 mt-2">Feel free to reach out or just to say hi!</p>
       </div>
     ),
   },
+  {
+    name: 'resume',
+    description: 'Download my resume',
+    execute: () => (
+      <div className="flex items-center gap-2">
+        <a
+          href="/PREETAM_RESUME.pdf"
+          download="Preetam_Tewari_Resume.pdf"
+          className="flex items-center gap-1 hover:underline"
+        >
+          <span>Download Resume</span>
+        </a>
+      </div>
+    ),
+  }
 ];
