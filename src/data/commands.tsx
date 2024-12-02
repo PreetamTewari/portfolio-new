@@ -1,7 +1,6 @@
 import { Command } from '../types/terminal';
 import { Mail, Github, Linkedin, Globe } from 'lucide-react';
 import { getWelcomeMessage } from '../utils/asciiArt';
-import { getTechStackArt } from '../utils/techStackArt';
 
 export const commands: Command[] = [
   {
@@ -83,7 +82,38 @@ export const commands: Command[] = [
   {
     name: 'techstack',
     description: 'Display my technical skills',
-    execute: () => getTechStackArt(),
+    execute: () => (
+      <div className='space-y-3'>
+        <div>
+          <p className='font-bold'>Languages:</p>
+          <p className='ml-4'>Java, Typescript, Python, HTML, CSS, PHP, SQL</p>
+        </div>
+        <div>
+          <p className='font-bold'>Frontend Frameworks:</p>
+          <p className='ml-4'>ReactJS, VueJS, NextJS, TailwindCSS</p>
+        </div>
+        <div>
+          <p className='font-bold'>Backend Frameworks:</p>
+          <p className='ml-4'>Springboot, Dropwizard, Express, Laravel, Flask</p>
+        </div>
+        <div>
+          <p className='font-bold'>DevOps:</p>
+          <p className='ml-4'>Docker, Gitlab CI/CD, Jenkins, JFrog, Terraform</p>
+        </div>
+        <div>
+          <p className='font-bold'>Cloud Service Providers:</p>
+          <p className='ml-4'>AWS, Azure Open AI</p>
+        </div>
+        <div>
+          <p className='font-bold'>Testing Tools:</p>
+          <p className='ml-4'>Vitest, RTL, JUnit, PyTest, Wiremock, Cucumber, Webdriver.io</p>
+        </div>
+        <div>
+          <p className='font-bold'>Others:</p>
+          <p className='ml-4'>Git, Gitlab, OpenAPI, Quartz Scheduler</p>
+        </div>
+      </div>
+    ),
   },
   {
     name: 'experience',
